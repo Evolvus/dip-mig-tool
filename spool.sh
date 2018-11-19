@@ -4,7 +4,8 @@
 ##  DESCRIPTION         = This script is used to execute sql 		    ##
 ##  AUTHOR		= Alavudeen
 ##  DATE OF CREATION    = 01-06-2014							    ##
-##  NOTE		= ##This is the main program that drives this tool. The flow is defined here
+##  NOTE		= This is for spooling only. A menu of Spool container is presented. The spool
+##                       SQL is executed and the spool file is SFTPed.
 ##					The actual logic will be in functions
 ##--**************************************************************************************--##
 
