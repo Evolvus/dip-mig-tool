@@ -333,7 +333,7 @@ cp ./execute.sh $orig_mig_path
 cp ./spool.sh $orig_mig_path
 cp ./functions.sh $orig_mig_path
 cp ./$temp_config $orig_mig_path/config.env
-cp ./LICENSE.txt $orig_mig_path
+cp ./LICENSE $orig_mig_path
 rm $temp_config
 
 
