@@ -73,16 +73,16 @@ This is the configuration file for the tool. It contains all the required detail
 There is an option to group all the required files per country or have all files grouped together. The config.env has a configuration called - COUNTRY_WISE Y(Yes) means files are grouped per country. N(No) means all files are grouped together.
 The log files are always common for all countries.
 
-1) sql
+1) sql - 
 sql folder contains all the sqls that are required for transformation and verification. 
 
-2) container
+2) container - 
 container folder contains all the containers that are used to group the sqls.
 
-3) output
+3) output - 
 output folder will hold all the output files that gets generated out of the spooling
 
-4) log
+4) log - 
 log folder will hold all the log files that gets generated as part of execution. The log files are always common for all countries.
 
 The path of the above log folders can be configured in config.env.
