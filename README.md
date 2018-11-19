@@ -63,6 +63,7 @@ As mentioned above you can execute normal containers using
 >execute.sh [country id]
 2) Spool Containers - Once the Normal Containers are executed, the output from the ouptut table needs to be spooled to a file. This is achieved through Spool Container. The Spool Container has the group of SQLs that will spool the output from output table to the files.
 >execute.sh SPOOL
+
 Please note that the output table will have exact structure as required by the Loading tool or the verification report format.
 
 ## config.env
