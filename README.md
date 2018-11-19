@@ -2,7 +2,7 @@
 Data Integration Migration Tool for Transformation and Verification Reporting.
 
 ## Installation
-Download the zip file containing all the files
+Download and extract the zip file into a Unix/Linux directory.
 https://github.com/Evolvus/dip-mig-tool/archive/master.zip
 
 Run 
