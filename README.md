@@ -37,7 +37,7 @@ Since the development and check-in will happen in local repostiory specific to a
 
 >execute.sh SPOOL
 
-Spool mode lets you spool the content of table into a file. This also uses the container to group set of SQL together.
+Spool mode lets you spool the content of table into a file. This also uses the container to group set of SQL together. Once the spooling is complete it lets you FTP it to the Windows Server location to convert to excel files.
 
 
 
