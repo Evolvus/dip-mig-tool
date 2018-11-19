@@ -1,6 +1,17 @@
 # dip-mig-tool
 Data Integration Migration Tool for Transformation and Verification Reporting.
 
+
+
+## Introduction
+The tool is unobtrusive and simplistic automation provider for data migration. It allows the data migration team to automate the executions in simple and predictable manner without adding absolutely any overhead to the execution.
+
+In migration, execution timelines are the key to success. The design goal of this tool is to have the lowest performance and learning footprint at the same time provide complete control and automate migration execution.
+
+All the logic of transformation and verification is built using RDBMS SQL. The SQL creates the output in an output table.
+The output table are then spooled to a file again using RDBMS sqls.
+
+
 ## Installation
 Download and extract the zip file into a Unix/Linux directory.
 https://github.com/Evolvus/dip-mig-tool/archive/master.zip
@@ -38,16 +49,6 @@ Since the development and check-in will happen in local repostiory specific to a
 >execute.sh SPOOL
 
 Spool mode lets you spool the content of table into a file. This also uses the container to group set of SQL together. Once the spooling is complete it lets you FTP it to the Windows Server location to convert to excel files.
-
-
-
-## Introduction
-The tool is unobtrusive and simplistic automation provider for data migration. It allows the data migration team to automate the executions in simple and predictable manner without adding absolutely any overhead to the execution.
-
-In migration, execution timelines are the key to success. The design goal of this tool is to have the lowest performance and learning footprint at the same time provide complete control and automate migration execution.
-
-All the logic of transformation and verification is built using RDBMS SQL. The SQL creates the output in an output table.
-The output table are then spooled to a file again using RDBMS sqls.
 
 ## Containers
 Since migrations are executed in chunks of modules, the tool provides containers to group the sqls based on execution.
