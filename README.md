@@ -71,7 +71,7 @@ The format of the container file is just the sql file name.
 >execute.sh SPOOL
 
 The format of the Spool Container file is 
-<<SQL_Spool_file.sql>> <<output_spool_file.txt>> <<sftppath>>
+<<SQL_Spool_file.sql>> <<output_spool_file.txt>> <<sftp_path>>
 
 Please note that the output table will have exact structure as required by the Loading tool or the verification report format.
 
