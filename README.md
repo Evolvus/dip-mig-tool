@@ -22,9 +22,9 @@ It will ask for the country for which you need migration. Then lets you execute 
 
 2) Normal Country Specfic mode
 
->execute.sh <CountryID>
+>execute.sh "Country ID"
 
-The first parameter is <<Countryid>>. It lets you skip the country menu and directly takes you to the container menu for the country id provided.
+The first parameter is "Country ID". It lets you skip the country menu and directly takes you to the container menu for the country id provided.
   
 3) Get Code mode
  
