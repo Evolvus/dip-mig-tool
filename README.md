@@ -16,7 +16,8 @@ Respond to all the questions. It will create the folders and copy the required f
 
 1) Normal mode
 
-prompt>execute.sh
+>execute.sh
+
 It will ask for the country for which you need migration. Then lets you execute the containers for that country.
 
 2) Normal Country Specfic mode
