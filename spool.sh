@@ -75,7 +75,7 @@ echo " "
 cat "$CONTAINER_PATH/$spool_contr_file" 2> $LOG_PATH/$LOG_ERROR_FILE 
 
 echo " "
-read -p "ENTER TO CONTINUE / CONTRL-C TO EXIT " xxx
+read -n1 -p "Do you want to transfer to SFTP Server @ $sftpconf? [y,n]" askspool
 #LOOP THROUGH EACH LINE OF CONTAINER FILE AND EXECUTE THE SQL FILE
 while read -r line
 do
@@ -104,6 +104,16 @@ do
 	echo "First two Rows of the spool"
 	head -2 "$OUTPUT_PATH/"$spoolfile
 	echo " "
+	
+	if [[ $askspool == "Y" || $askspool == "y" ]]; then
+		if [[ "$sftppath" != "" ]]; then
+			spoolfile="$OUT_PATH/"$spoolfile
+			log_info "SFTP spool file at `date` $spoolfile "
+			scp  $spoolfile $sftpconf"/"$sftppath
+			log_info "Completed Spooling and SFTP  at `date` " $sqlexec 
+		fi
+
+	fi
 
 	log_info "Completed executing SQL file   at `date` " 
 	echo " "
