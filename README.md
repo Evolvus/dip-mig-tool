@@ -49,7 +49,7 @@ In migration, execution timelines are the key to success. The design goal of thi
 All the logic of transformation and verification is built using RDBMS SQL. The SQL creates the output in an output table.
 The output table are then spooled to a file again using RDBMS sqls.
 
-### Containers
+## Containers
 Since migrations are executed in chunks of modules, the tool provides containers to group the sqls based on execution.
 
 There are two types of containers - 
@@ -77,10 +77,22 @@ output folder will hold all the output files that gets generated out of the spoo
 4) log
 log folder will hold all the log files that gets generated as part of execution. The log files are always common for all countries.
 
+The path of the above log folders can be configured in config.env.
+The above structure is mandated by the tool. Within the above structure, the user of tool is free to build their own folder structure as they would find it convenient.
+
 ## Logging
 
+Following logging is enabled by tool - 
+1) Error - All errors are logged to the error log file
+2) Warn - All warnings are logged to the warn log file
+3) Info - All information are logged to the trace log file
+4) All - Error, Warn and Info logs can also be directed to a single file called Log All file
 
-User of tool can have the folder structure internal to 
+Each of the above can be independently enabled (or disabled) in config.env.
+The file names can also be configured in config.env.
+
+
+
 
 ## Technology
 The tool was developed using bash Version 3+ [It can work in all versions. It just uses the features of Version 3+]
