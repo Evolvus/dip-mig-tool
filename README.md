@@ -58,6 +58,30 @@ There are two types of containers -
 
 Please note that the output table will have exact structure as required by the Loading tool or the verification report format.
 
+## config.env
+This is the configuration file for the tool. It contains all the required details for the tool to run. 
+
+## Folders
+There is an option to group all the required files per country or have all files grouped together. The config.env has a configuration called - COUNTRY_WISE Y(Yes) means files are grouped per country. N(No) means all files are grouped together.
+The log files are always common for all countries.
+
+1) sql
+sql folder contains all the sqls that are required for transformation and verification. 
+
+2) container
+container folder contains all the containers that are used to group the sqls.
+
+3) output
+output folder will hold all the output files that gets generated out of the spooling
+
+4) log
+log folder will hold all the log files that gets generated as part of execution. The log files are always common for all countries.
+
+## Logging
+
+
+User of tool can have the folder structure internal to 
+
 ## Technology
 The tool was developed using bash Version 3+ [It can work in all versions. It just uses the features of Version 3+]
 Plans are in place to upgrade to bash Version 4 which supports arrays. Support of arrays will make the tool more versatile.
