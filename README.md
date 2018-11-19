@@ -8,8 +8,12 @@ The tool is unobtrusive and simplistic automation provider for data migration. I
 
 In migration, execution timelines are the key to success. The design goal of this tool is to have the lowest performance and learning footprint at the same time provide complete control and automate migration execution.
 
-All the logic of transformation and verification is built using RDBMS SQL. The SQL creates the output in an output table.
+All the logic of transformation and verification is externally built using RDBMS SQL. The SQL creates the output in an output table.
 The output table are then spooled to a file again using RDBMS sqls.
+
+These sqls are checked into the configured source control system.
+
+This tool will then orchestrate the migration execution.
 
 
 ## Installation
