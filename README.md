@@ -108,7 +108,10 @@ Following logging is enabled by tool -
 Each of the above can be independently enabled (or disabled) in config.env.
 The file names can also be configured in config.env.
 
-
+## Things to Note
+1) All files and directories should not have space. Use underscore (_) instead of space
+2) Keep any eye on error.log and trace.log to check the progress
+3) Mutliple instance can be run to increase parallelism. Only challenge is it will muck up log files. (Roadmap item - generate log file with process id)
 
 
 ## Technology
