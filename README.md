@@ -16,24 +16,24 @@ Respond to all the questions. It will create the folders and copy the required f
 
 1) Normal mode
 
->execute.sh
+prompt>execute.sh
 It will ask for the country for which you need migration. Then lets you execute the containers for that country.
 
 2) Normal Country Specfic mode
 
->execute.sh <<Countryid>>
+prompt>execute.sh <<Countryid>>
 
 The first parameter is <<Countryid>>. It lets you skip the country menu and directly takes you to the container menu for the country id provided.
   
 3) Get Code mode
  
- >execute.sh GETCODE
+ prompt>execute.sh GETCODE
  
 Since the development and check-in will happen in local repostiory specific to a bank, latest code needs to be taken before execution. This option will connect to the SVN/GIT/Any other source control and retrieve the latest code.
 
 4) Spool mode
 
->execute.sh SPOOL
+prompt>execute.sh SPOOL
 
 Spool mode lets you spool the content of table into a file. This also uses the container to group set of SQL together.
 
