@@ -75,7 +75,7 @@ echo " "
 cat "$CONTAINER_PATH/$spool_contr_file" 2> $LOG_PATH/$LOG_ERROR_FILE 
 
 echo " "
-read -n1 -p "Do you want to transfer to SFTP Server @ $sftpconf? [y,n]" askspool
+read -n1 -p "Do you want to transfer to SFTP Server @ $SFTP_CONF? [y,n]" askspool
 #LOOP THROUGH EACH LINE OF CONTAINER FILE AND EXECUTE THE SQL FILE
 while read -r line
 do
@@ -109,7 +109,7 @@ do
 		if [[ "$sftppath" != "" ]]; then
 			spoolfile="$OUT_PATH/"$spoolfile
 			log_info "SFTP spool file at `date` $spoolfile "
-			scp  $spoolfile $sftpconf"/"$sftppath
+			scp  $spoolfile "$SFTP_CONF/$sftppath"
 			log_info "Completed Spooling and SFTP  at `date` " $sqlexec 
 		fi
 
