@@ -22,19 +22,19 @@ It will ask for the country for which you need migration. Then lets you execute 
 
 2) Normal Country Specfic mode
 
-prompt>execute.sh <<Countryid>>
+>execute.sh <CountryID>
 
 The first parameter is <<Countryid>>. It lets you skip the country menu and directly takes you to the container menu for the country id provided.
   
 3) Get Code mode
  
- prompt>execute.sh GETCODE
+>execute.sh GETCODE
  
 Since the development and check-in will happen in local repostiory specific to a bank, latest code needs to be taken before execution. This option will connect to the SVN/GIT/Any other source control and retrieve the latest code.
 
 4) Spool mode
 
-prompt>execute.sh SPOOL
+>execute.sh SPOOL
 
 Spool mode lets you spool the content of table into a file. This also uses the container to group set of SQL together.
 
