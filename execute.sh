@@ -129,8 +129,8 @@ do
 
 	log_info "Executing SQL file   at `date`  $name"
 
-#	sqlplus -s $dbconf/$DB_PASS @$name
-	sleep  $[RANDOM%5+1]
+	sqlplus -s $dbconf/$DB_PASS @$name <dev/null
+#	sleep  $[RANDOM%5+1]
 	echo " "
 
 	log_info "Completed executing SQL file   at `date` " 
